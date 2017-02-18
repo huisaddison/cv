@@ -3,7 +3,7 @@
 % LaTeX Template
 % Version 1.1 (9/12/12)
 %
-% This template has been downloaded from:
+% This template was originally downloaded from:
 % http://www.LaTeXTemplates.com
 %
 % Original author:
@@ -17,28 +17,36 @@
 % directory as this .tex file. These files provide the resume style and themes 
 % used for structuring the document.
 %
+% Alternatively, if you use a distribution like TeX Live, ensure that
+% moderncv.cls and .sty files are installed through your package manager.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[10.5pt,letterpaper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\documentclass[10.5pt,letterpaper,sans]{moderncv} 
 
-\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-
-%\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\moderncvstyle{classic} % CV theme
+% - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color
+% - options include: 'blue' (default), 'orange',
+% 'green', 'red', 'purple', 'grey' and 'black'
 
 \usepackage[scale=0.84]{geometry} % Reduce document margins
+
+%% Configure fonts
 \usepackage{fontspec}
+% Define fonts
 \newfontfamily\bitter[Path=fonts/Bitter/, Ligatures=TeX]{Bitter-Regular}
 \newfontfamily\raleway[Path=fonts/Raleway/, Ligatures=TeX]{Raleway-Regular}
+% Set global font
 \setsansfont[Path=fonts/Raleway/,
     BoldFont=Raleway-Bold,
     ItalicFont=Raleway-Italic,
     BoldItalicFont=Raleway-BoldItalic,
     Ligatures=TeX]{Raleway-Regular}
+% Set fonts by section
 \renewcommand*{\namefont}{\bitter\fontsize{34}{36}\mdseries\upshape}
 \renewcommand*{\titlefont}{\bitter\LARGE\mdseries\slshape}
 \renewcommand*{\addressfont}{\bitter\small\mdseries\slshape}
@@ -46,28 +54,29 @@
 \renewcommand*{\sectionfont}{\bitter\Large\mdseries\upshape}
 \renewcommand*{\subsectionfont}{\bitter\large\mdseries\upshape}
 
-\setlength{\hintscolumnwidth}{2.8cm} % Uncomment to change the width of the dates column
-%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+% Set Dates column width
+\setlength{\hintscolumnwidth}{2.8cm} 
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 
-\firstname{Addison} % Your first name
-\familyname{Hu} % Your last name
+\firstname{Addison} 
+\familyname{Hu}
 
-% All information in this block is optional, comment out any lines you don't need
 %\title{Curriculum Vitae}
 \address{PO Box 202087}{New Haven, CT 06520}
 \mobile{(626) 703 - 9110}
 %\phone{(000) 111 1112}
 %\fax{(000) 111 1113}
 \email{addison.hu@yale.edu}
-\homepage{huisaddison.com} % The first argument is %the url for the clickable link, the second argument is the url displayed in the %template - this allows special characters to be displayed such as the tilde in this %example
+\homepage{huisaddison.com} 
 %\extrainfo{additional information}
-%\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is %the thickness of the frame around the picture (0pt for no frame)
-%\quote{Seeking a Job Opportunity or a PhD Placement by the 10th of September - 23 years old}
-
+%\photo[70pt][0.4pt]{picture} % The first bracket is the picture height,
+%the second is %he thickness of the frame around the picture (0pt for no frame)
+%\quote{
+% Seeking a Job Opportunity or a PhD Placement by the 10th of September - 23
+% years old} 
 %----------------------------------------------------------------------------------------
 
 \begin{document}
@@ -81,9 +90,11 @@
 \section{Education}
 
 \cventry{2013--present}{Yale University}{New Haven, CT}{}{}{
-    - Bachelor of Science, Statistics; Expected Graduation May 2017; Cumulative GPA: 3.89                       \\
-    - My current interests include computationally efficient methods optimizing over 
-    large-scale data sets and high-dimensional estimation of precision matrices.    \\
+    - Bachelor of Science, Statistics; Expected Graduation May 2017; Cumulative
+    GPA: 3.89                       \\ 
+    - My current interests include computationally efficient methods optimizing
+    over large-scale data sets and high-dimensional estimation of precision
+    matrices.    \\
 }
 
 %----------------------------------------------------------------------------------------
@@ -99,9 +110,15 @@
 }
 
 \cventry{Summer 2016}{Data Scientist}{OnCorps}{Cambridge, MA}{}{
-    - Authored internal R library to rapidly and faithfully visualize classification trees via D3.js, with integration into core products and services     \\
-    - Built pipelines for data aggregation, cleanup, and analysis in R and Python                                                                                       \\
-    - Developed and maintained internal and client-facing dashboards in R Shiny to monitor product engagement rates and outcomes                                        \\
+    - Authored internal R library to rapidly and faithfully visualize
+    classification trees via D3.js, with integration into core products and
+    services     \\ 
+    - Built pipelines for data aggregation, cleanup, and analysis in R and
+    Python
+    \\ 
+    - Developed and maintained internal and client-facing dashboards in R Shiny
+    to monitor product engagement rates and outcomes
+    \\ 
 }
 
 \cventry{2015--2016}{Research Assistant}{Yale Institute for Network Science}{New Haven, CT}{}{
