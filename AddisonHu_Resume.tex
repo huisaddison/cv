@@ -34,7 +34,11 @@
 \usepackage{fontspec}
 \newfontfamily\bitter[Path=fonts/Bitter/, Ligatures=TeX]{Bitter-Regular}
 \newfontfamily\raleway[Path=fonts/Raleway/, Ligatures=TeX]{Raleway-Regular}
-\setsansfont[Path=fonts/Raleway/, Ligatures=TeX]{Raleway-Regular}
+\setsansfont[Path=fonts/Raleway/,
+    BoldFont=Raleway-Bold,
+    ItalicFont=Raleway-Italic,
+    BoldItalicFont=Raleway-BoldItalic,
+    Ligatures=TeX]{Raleway-Regular}
 \renewcommand*{\namefont}{\bitter\fontsize{34}{36}\mdseries\upshape}
 \renewcommand*{\titlefont}{\bitter\LARGE\mdseries\slshape}
 \renewcommand*{\addressfont}{\bitter\small\mdseries\slshape}
