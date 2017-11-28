@@ -64,8 +64,8 @@
 \firstname{Addison} 
 \familyname{Hu}
 
-%\title{Curriculum Vitae}
-\address{1101 Dexter Ave N}{Seattle, WA 98109}
+% \title{PhD - Statistics - Fall 2018}
+\address{2545 Mayfair Ave N}{Seattle, WA 98109}
 \mobile{(626) 703 - 9110}
 %\phone{(000) 111 1112}
 %\fax{(000) 111 1113}
@@ -89,48 +89,30 @@
 
 \section{Education}
 
-\cventry{2013 -- 2017}{Yale University}{New Haven, CT}{}{}{
-    - Bachelor of Science, Statistics  \\ 
-    - Research involved computationally efficient methods for optimizing
-    over large-scale data sets and high-dimensional estimation of precision
-    matrices.    \\
+\cventry{August 2013 -- May 2017}{Yale University}{New Haven, CT}{}{}{
+    - Bachelor of Science, Statistics (GPA: 3.9)  \\ 
+    - Research topics: computationally efficient methods for optimizing
+    over large-scale data sets; minimax estimation of precision
+    matrices; latent variable graphical models; screening rules.
 }
 
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
+%	PROFESSIONAL EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
-
-\section{Experience}
-
-\cventry{2017--present}{Data Scientist}{Facebook}{Seattle, WA}{}{
-    - Guides development of the Search and Workplace products
-    \\
-}
-\cventry{2016--2017}{Research Assistant}{Yale Statistics}{New Haven, CT}{}{
+\section{Research \& Teaching Experience}
+\cventry{August 2016-- May 2017}{Research Assistant}{Yale Dept of Statistics}{New Haven, CT}{}{
     - Implemented approximations to second-order optimization algorithms in
     distributed settings   \\ 
     - Studied risk bounds for estimation of bandable precision matrices.   \\
 }
 
-\cventry{Summer 2016}{Data Scientist}{OnCorps}{Cambridge, MA}{}{
-    - Authored internal R library to rapidly and faithfully visualize
-    classification trees via D3.js, with integration into core products and
-    services     \\ 
-    - Built pipelines for data aggregation, cleanup, and analysis in R and
-    Python
-    \\ 
-    - Developed and maintained internal and client-facing dashboards in R Shiny
-    to monitor product engagement rates and outcomes
-    \\ 
-}
-
-\cventry{2015--2016}{Research Assistant}{Yale Institute for Network Science}{New Haven, CT}{}{
-    - Wrote pruning and local clustering algorithms based on novel research
-    (C++) \\
-    - Data cleanup and analysis in R and Python \\
-}
-
-\cventry{2015--2017}{Teaching Fellow}{Yale Depts of Computer Science: Statistics}{New Haven, CT}{}{
+\cventry{January 2016 -- May 2017}{Teaching Fellow}{Yale Depts of Computer Science; Statistics}{New Haven, CT}{}{
+    - Served in grading and supplemental teaching roles, covering material
+    including inference, model selection, optimization, dimensionality
+    reduction, dictionary learning, matrix factorization, etc., with
+    applications in R, Python, and Spark.
+    \\
+    \iffalse
     - Held office hours for STAT 230, an introduction to the R
     statistical language through applications in inference, simulation, model
     selection, $k$-means, PCA, and other methods.  
@@ -142,17 +124,100 @@
     \\
     - Provided supplementary instruction for `Introduction to Information
     Systems', taught in R and Python \\ 
+    \fi
 }
 
+\cventry{August 2015 -- May 2016}{Research Assistant}{Yale Institute for Network Science}{New Haven, CT}{}{
+    - Wrote graph filtering and local clustering algorithms based on novel research
+    (C++) \\
+    - Data cleanup and analysis in R and Python \\
+}
 
 %----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS SECTION
+%	PUBLICATIONS SECTION
 %----------------------------------------------------------------------------------------
+\section{Publications}
+\cventry{December 2017}{A. J. Hu and S. N. Negahban}{Minimax Estimation of Bandable
+    Precision Matrices}{Advances in Neural Information Processing Systems}{}{
+    - \textbf{Condensed abstract:} Bandable precision matrices arise naturally
+    in a number of time-series contexts 
+    and correspond to the adjacency matrix representation of the Gauss-Markov graph.
+    Minimax results under the spectral norm have previously been established for
+    covariance matrices, both sparse and banded, and for sparse precision matrices.
+    We establish minimax bounds for estimating banded precision matrices under the
+    spectral norm.
+    \\
+    - Journal version at \url{https://arxiv.org/abs/1710.07006}
+}
 
-\section{Technical Skills}
+%----------------------------------------------------------------------------------------
+%   PROJECTS SECTION	
+%----------------------------------------------------------------------------------------
+\section{Projects}
+\cventry{\hspace{-0.5cm}December 2016}{Latent Variable Inference with Factor Graphs}{}{}{}{
+    - In this project, we consider a parameter estimation problem where the factor
+    model is bipartite, conditioned on a small set of global factors influencing
+    one of the parts.  We pose the search for optimal parameters as an optimization
+    problem and provide update rules for gradient descent.
+    \\
+    - Term project for STAT667, a graduate-level course on probabilistic
+    graphical models.  
+    \\
+    - Link: \url{
+        http://huisaddison.com/pdfs/LatentVariableInferenceWithFactorGraphs.pdf
+    }
+}
+\newpage
+\section{Projects, cont.}
+\cventry{January 2017}{newton-sketch}{}{}{}{
+    - Implementation of \href{
+        https://arxiv.org/abs/1505.02250
+    }{
+        \textit{Newton Sketch: A Linear-time Optimization Algorithm with
+        Linear-Quadratic Convergence}
+    } in Spark and NumPy.
+    \\
+    - In the Spark implementation, we adapt the algorithm to the distributed setting.
+    \\
+    - Independent work.  Link: \url{https://github.com/huisaddison/newton-sketch}
+}
 
-\cvitem{Proficient}{R, Python, Spark (Scala), Linux, \LaTeX, SQL}
-\cvitem{Basic}{C, Git, MongoDB}
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{Professional Experience}
+\cventry{July 2017 -- present}{Data Scientist}{Facebook}{Seattle, WA}{}{
+    - I work on Content Search Personalization.
+    \\
+}
+\cventry{Summer 2016}{Data Scientist}{OnCorps}{Cambridge, MA}{}{
+    - Authored internal R library to rapidly and faithfully visualize
+    classification trees via D3.js, with integration into core products and
+    services     
+    \\ 
+    \iffalse
+    - Built pipelines for data aggregation, cleanup, and analysis in R and
+    Python
+    \\ 
+    - Developed and maintained internal and client-facing dashboards in R Shiny
+    to monitor product engagement rates and outcomes
+    \\ 
+    \fi
+}
+
+%----------------------------------------------------------------------------------------
+%	VOLUNTEER EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{Volunteer Experience}
+\cventry{August 2013 -- May 2014}{Math Coach}{MathCounts Outreach}{New Haven, CT}{}{
+    -- Afterschool mathematics coaching to students in the New Haven
+    public school system.  
+}
+
+\cventry{\hspace{-0.5cm}September 2017 -- present}{Tutor}{Youth Tutoring Program}{Seattle, WA}{}{
+    -- Tutoring \& mentoring for Seattle-area students from low- and
+    mixed-income housing.  
+}
 
 
 %----------------------------------------------------------------------------------------
@@ -161,12 +226,17 @@
 %\bigskip
 
 %----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\section{Technical Skills}
+\cvitem{Proficient}{R, Python, \LaTeX, SQL}
+\cvitem{Basic}{C, Git, Spark (Scala)}
+
+%----------------------------------------------------------------------------------------
 %	EXTRACURRICULARS SECTION
 %----------------------------------------------------------------------------------------
-\iffalse
 \section{Personal Interests}
-\cvitem{}{Paddleboarding, skateboarding, cooking}
-\fi
+\cvitem{}{Skateboarding, swimming, cooking}
 
 %----------------------------------------------------------------------------------------
 %	COVER LETTER
