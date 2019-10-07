@@ -66,14 +66,14 @@
 
 % \title{}
 \address{
-    Department of Statistics\\
+    Department of Statistics \& Data Science\\
     Baker Hall\\
     Carnegie Mellon University\\
 }{Pittsburgh, PA 15213}
-\mobile{(626) 703 - 9110}
+% \mobile{(626) 703 - 9110}
 %\phone{(000) 111 1112}
 %\fax{(000) 111 1113}
-\email{mail@huisaddison.com}
+\email{addisonhu@cmu.edu}
 \homepage{huisaddison.com} 
 %\extrainfo{additional information}
 %\photo[70pt][0.4pt]{picture} % The first bracket is the picture height,
@@ -104,43 +104,6 @@
 }
 
 %----------------------------------------------------------------------------------------
-%	PROFESSIONAL EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-\section{Research \& Teaching Experience}
-\cventry{August 2016-- May 2017}{Research Assistant}{Yale Dept of Statistics}{New Haven, CT}{}{
-    - Implemented approximations to second-order optimization algorithms in
-    distributed settings   \\ 
-    - Studied risk bounds for estimation of bandable precision matrices.   \\
-}
-
-\cventry{January 2016 -- May 2017}{Teaching Fellow}{Yale Depts of Computer Science; Statistics}{New Haven, CT}{}{
-    - Served in grading and supplemental teaching roles, covering material
-    including inference, model selection, optimization, dimensionality
-    reduction, dictionary learning, matrix factorization, etc., with
-    applications in R, Python, and Spark.
-    \\
-    \iffalse
-    - Held office hours for STAT 230, an introduction to the R
-    statistical language through applications in inference, simulation, model
-    selection, $k$-means, PCA, and other methods.  
-    \\
-    - Serving in a teaching and grading role for `Computational Tools for Data
-    Science', covering optimization, dimensionality reduction, clustering, 
-    dictionary learning, matrix factorization, large-scale data, etc., with
-    applications in Python and Spark.
-    \\
-    - Provided supplementary instruction for `Introduction to Information
-    Systems', taught in R and Python \\ 
-    \fi
-}
-
-\cventry{August 2015 -- May 2016}{Research Assistant}{Yale Institute for Network Science}{New Haven, CT}{}{
-    - Wrote graph filtering and local clustering algorithms based on novel research
-    (C++) \\
-    - Data cleanup and analysis in R and Python \\
-}
-
-%----------------------------------------------------------------------------------------
 %	PUBLICATIONS SECTION
 %----------------------------------------------------------------------------------------
 \section{Publications}
@@ -160,8 +123,40 @@
 %----------------------------------------------------------------------------------------
 %   PROJECTS SECTION	
 %----------------------------------------------------------------------------------------
-\newpage
 \section{Projects}
+\cventry{January 2019 -- present}{Hurricane heat flux estimation}{}{}{}{
+    - Developing methodology for estimating heat flux induced by hurricane passage
+    \\
+    - Ultimate goal of this work is to sharpen hurricane rapid intensification
+    forecasting
+    \\
+    - Ongoing work with Professors Mikael Kuusela and Ann Lee 
+}
+\cventry{August 2017 - January 2017}{newton-sketch}{}{}{}{
+    - Implementation of \href{
+        https://arxiv.org/abs/1505.02250
+    }{
+        \textit{Newton Sketch: A Linear-time Optimization Algorithm with
+        Linear-Quadratic Convergence}
+    } in Spark and NumPy.
+    \\
+    - In the Spark implementation, we adapt the algorithm to the distributed setting.
+    \\
+    - Link: \url{https://github.com/huisaddison/newton-sketch}
+}
+\cventry{August 2015 - May 2016}{Graph algorithms}{}{}{}{
+    - Implemented graph filtering and clustering algorithms based on novel research,
+    under the direction of graduate student James Williams (Yale Institute for
+    Network Science).
+    \\
+    - Algorithms were directly used by economist David Gelvez to understand the
+    impact of international trade shocks on domestic production networks in Colombia.
+    \\
+    - Work done as part of the Yale Institute for Network Science.
+}
+
+
+\iffalse
 \cventry{\hspace{-0.5cm}December 2016}{Latent Variable Inference with Factor Graphs}{}{}{}{
     - In this project, we consider a parameter estimation problem where the factor
     model is bipartite, conditioned on a small set of global factors influencing
@@ -175,18 +170,39 @@
         http://huisaddison.com/projects/latent-var.pdf
     }
 }
-\cventry{January 2017}{newton-sketch}{}{}{}{
-    - Implementation of \href{
-        https://arxiv.org/abs/1505.02250
-    }{
-        \textit{Newton Sketch: A Linear-time Optimization Algorithm with
-        Linear-Quadratic Convergence}
-    } in Spark and NumPy.
-    \\
-    - In the Spark implementation, we adapt the algorithm to the distributed setting.
-    \\
-    - Independent work.  Link: \url{https://github.com/huisaddison/newton-sketch}
+\fi
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\newpage
+\section{Teaching Experience}
+\cventry{August 2018 -- present}{Teaching Assistant}{Carnegie Mellon University}{Pittsburgh, PA}{}{
+    - Topics covered: probability theory, inference, linear models, scientific
+    communication \& report writing.
+    - Lectured in lieu of instructor when necessary.
 }
+
+\cventry{January 2016 -- May 2017}{Teaching Fellow}{Yale Depts of Computer Science; Statistics}{New Haven, CT}{}{
+    - Topics covered: 
+    inference, model selection, optimization, dimensionality
+    reduction, dictionary learning, matrix factorization, etc., with
+    applications in R, Python, and Spark.
+    \\
+    \iffalse
+    - Held office hours for STAT 230, an introduction to the R
+    statistical language through applications in inference, simulation, model
+    selection, $k$-means, PCA, and other methods.  
+    \\
+    - Serving in a teaching and grading role for `Computational Tools for Data
+    Science', covering optimization, dimensionality reduction, clustering, 
+    dictionary learning, matrix factorization, large-scale data, etc., with
+    applications in Python and Spark.
+    \\
+    - Provided supplementary instruction for `Introduction to Information
+    Systems', taught in R and Python \\ 
+    \fi
+}
+
 
 %----------------------------------------------------------------------------------------
 %	PROFESSIONAL EXPERIENCE SECTION
@@ -214,7 +230,14 @@
 %----------------------------------------------------------------------------------------
 %	VOLUNTEER EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
-\section{Volunteer Experience}
+\section{Service, Professional}
+\cventry{\hspace{-0.5cm}May 2019 --\\ \hspace{-0.5cm}September 2019}{Reviewer}{Neural Information Processing Systems}{}{}{
+    -- Served as a reviewer for five submissions on topics spanning adversarial
+    neural networks, learning theory, regularization, and the Wasserstein distance.
+}
+
+
+\section{Service, Community}
 \cventry{\hspace{-0.5cm}September 2017 -- June 2018}{Tutor}{Youth Tutoring Program}{Seattle, WA}{}{
     -- Tutoring \& mentoring for Seattle-area students from low- and
     mixed-income housing.  
@@ -222,6 +245,10 @@
 \cventry{August 2013 -- May 2014}{Math Coach}{MathCounts Outreach}{New Haven, CT}{}{
     -- Afterschool mathematics coaching to students in the New Haven
     public school system.  
+}
+\cventry{August 2013 -- May 2014}{English Tutor}{Bridges ESL}{New Haven, CT}{}{
+    -- English as a second language classes for members of the New Haven immigrant
+    community.
 }
 
 
